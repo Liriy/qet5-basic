@@ -1,0 +1,31 @@
+﻿<Window x:Class="qet5_basic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:qet5_basic"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="{x:Null}"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="600">
+    <Grid>
+        <md:Card Margin="7,7,7,7" md:UniformCornerRadius="7" md:ShadowAssist.ShadowDepth="Depth2" Background="#FF151515">
+            <Grid>
+                <TextBlock Foreground="White"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,8,0,0">qet5 | Basic</TextBlock>
+
+                <Grid HorizontalAlignment="Left" Margin="5,35,0,0" VerticalAlignment="Top" Height="296" Width="571">
+                    <TextBlock Foreground="White" FontFamily="Consolas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0">FASTBOOT MENU</TextBlock>
+                    <Button Margin="10,254,447,10" Click="Button_Click" Background="#FF0085FF" BorderBrush="#FF0090FF">
+                        <Grid>
+                            <md:PackIcon x:Name="icon" Kind="Injection"/>
+                            <TextBlock x:Name="Status" Text="Patch vbmeta" Margin="16,1,0,1" FontSize="10"/>
+                        </Grid>
+                    </Button>
+                </Grid>
+            </Grid>
+        </md:Card>
+    </Grid>
+</Window>
