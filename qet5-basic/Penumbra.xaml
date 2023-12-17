@@ -1,21 +1,28 @@
-﻿<Window x:Class="qet5_basic.Penumbra"
+<Window x:Class="qet5_basic.Penumbra"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:qet5_basic"
         mc:Ignorable="d"
+        ResizeMode="CanResizeWithGrip"
         WindowStyle="None"
         AllowsTransparency="True"
         Background="{x:Null}"
-        Title="Penumbra" Height="410" Width="700">
+        Title="Penumbra" Height="410" MinHeight="410" MinWidth="700" Width="700">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="30"
+                  ResizeBorderThickness="5" />
+    </WindowChrome.WindowChrome>
+
     <Grid>
         <Border Background="#FFf2f2f2" CornerRadius="7">
             <Grid>
                 <TextBlock Foreground="#595959" Text="Penumbra Flasher" Margin="0,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                 <Image Source="New Project.png" HorizontalAlignment="Left" Margin="7,7,0,0" VerticalAlignment="Top" Height="20" Width="20" />
+                <Border Background="#FFFFFF" Opacity="0.000000000000000000000000000000000000000000000000000000001" Margin="0,0,0,369" MouseDown="Border_MouseDown"/>
 
-                <ListBox HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="#595959" BorderThickness="1" Height="304" Width="118"/>
+                <ListBox HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="#595959" BorderThickness="0,1,1,1" Height="318" Width="129"/>
             </Grid>
         </Border>
     </Grid>
